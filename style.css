@@ -1,0 +1,812 @@
+:root{
+    --primary-color: #007bff;
+    --primary-color-2: #b20000;
+    --secondary-color: #6c757d;
+    --bg-dark: #262a30;
+    --text-light: #f8f9fa;
+    --header-bg: rgba(49, 60, 94, 0.5);
+    /* --content-bg: rgba(52, 58, 64, 0.782); */
+    --content-bg: transparent;
+    --font-size-base: 16px; 
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monoton-regular {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+
+.big-shoulders-stencil-uniquifier {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+  
+
+.eb-garamond-uniquifier {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.jaini-regular {
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.bytesized-regular {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oleo-script-regular {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oleo-script-bold {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  .merienda-uniquifier {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  .lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lobster-two-bold {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lobster-two-regular-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lobster-two-bold-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+
+body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: var(--font-size-base);
+}
+
+header{
+    background-color: var(--header-bg);
+    color: var(--text-light);
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}  
+
+header h1{
+    margin: 0;
+    font-size: 2rem;
+    transition: font-size 0.3s ease;
+    margin-left: 1rem;
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+nav li{
+    margin: 0 0.5rem;
+}
+
+nav a{
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    transition: font-size 0.3s ease;
+}
+
+
+#bg-video{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+section {
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-family: "Monoton", sans-serif;
+}
+#home h2{
+    /* font-family: sans-serif; */
+    font-family: "EB Garamond", serif;  
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--content-bg);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px #000000;
+}
+
+.content:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    background-color: transparent;
+}
+
+.content:not(:hover){
+    transition: transform 0.3s ease;
+}
+
+
+#home p{
+    font-size: 1rem;
+}
+
+#projects .content {
+    background-color: transparent;
+    box-shadow: 0 0 15px #000000;
+}
+#projects .content:hover{
+    background-color: transparent;
+    box-shadow: 0 0 15px rgba(112, 1, 247, 0.5);
+}
+
+#projects .project {
+    margin-bottom: 1.5rem;
+}
+
+.project-media {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0 0 25px rgba(123, 0, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-media:hover {
+    transform: scale(1.1);
+}
+
+#skills .content {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    /* background-color: var(--content-bg); */
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    width: 44%;
+}
+
+.skill-tube{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.tube {
+    width: 100%;
+    height: 15px;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+.skill-tube p{
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    text-align: right;
+    color: #ffffff;
+}
+
+footer {
+    background-color: transparent;
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    padding-bottom: 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+
+footer .content {
+    box-shadow: none;
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    box-shadow:0 0 5px   #000000;
+}
+
+footer a{
+    color: var(--text-light);
+}
+
+.page{
+    width: 100;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 3rem o;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container{
+    margin-bottom: 4rem;
+    padding: 1.5rem;
+    border: 1px  solid rgba(255, 255, 255, 0.1) ;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-container:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.emblema-one-regular {
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#home .content span{
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+#home .content:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+#home .content:not(:hover){
+    transition: transform 0.3s ease;
+}
+#home .content:hover{
+    p{
+        font-size: 1.2rem;
+        transition: font-size 0.3s ease;
+        text-shadow:0 0 10px #000000;
+        /* font-family: "Lobster Two", sans-serif; */
+        /* color: var(--primary-color); */
+    }
+
+    .Name{
+        color: var(--primary-color);
+        text-shadow: 0 0 10px #000000;
+        /* font-family: "Merienda", cursive; */
+        font-weight: 700;
+        margin: 0;
+        transition: font-size 0.3s ease;
+        margin-left: 1rem;
+        font-size: 3.5rem;
+        font-family: "EB Garamond", serif;  
+    }  
+    
+    h2{
+        /* font-family: "Monoton", sans-serif; */
+        text-shadow:0 0 10px #000000;
+    }   
+
+    /* transform: scale(1.05); */
+
+    
+}
+#home .content:not(:hover){
+    p{
+        transition: transform 0.4s ease;
+    }
+    .Name{
+        transition: transform 0.4s ease;
+    }
+}
+
+
+#projects .content:hover{
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+}
+
+
+#projects .content:not(:hover){
+    transition: transform 0.2s ease;
+    
+}
+
+#skills .content:hover{
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+    h3{
+        /* font-family: "Lobster Two", sans-serif; */
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+#skills  .content:not(:hover){
+    transition: transform 0.3s ease ;
+}
+
+#skills span{
+    /* display: none; */
+    visibility: hidden;
+    
+}
+
+/* Mobile L 425 */
+@media (max-width:430px){
+    header{
+        padding: 0.5rem 1rem;
+        height: 7vh;
+        align-items: center;
+    } 
+   
+    header h1{
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    nav{
+        width: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: right;
+    }
+
+    nav ul li a{
+        padding: 0px;
+        font-size: 13px;
+
+    }
+
+    header nav ul li a:hover{
+        font-size: 1.1rem;
+        transition: font-size 0.3s ease;
+    } 
+
+    .content{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        .Name{
+            font-size: 2rem;
+        }
+    }
+
+    #home .content:hover{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        .Name{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.06rem;
+        }
+    }
+
+    #skills .content{
+        width: 60%;
+        h2{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 14px;
+        }
+
+    }
+
+    #skills .content:hover{
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
+    #projects .content{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 11px;
+        }
+        width: 60%;
+    }
+
+    #contact .content{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}
+
+/* Mobile M 375 */
+
+@media (max-width:380px){
+    header{
+        padding: 0.3rem 1rem;
+        height: auto;
+        align-items: center;
+    } 
+   
+    header h1{
+        font-size: 1.3rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    nav{
+        width: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: right;
+    }
+
+    nav ul li a{
+        padding: 0px;
+        align-items: end;
+        word-spacing: 0.5rem;
+        font-size: 13px;
+    }
+
+    header nav ul li a:hover{
+        font-size: 1.1rem;
+        transition: font-size 0.3s ease;
+    } 
+
+    .content{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        .Name{
+            font-size: 2rem;
+        }
+    }
+
+    #home .content{
+        width: 70%;
+        .Name{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
+
+    #home .content:hover{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        .Name{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 15px;
+        }
+        transition: transform 3.2s ease;
+    }
+
+    #skills .content{
+        width: 70%;
+        h2{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 13px;
+        }
+
+    }
+
+    #skills .content:hover{
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+
+    #projects .content{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 11px;
+        }
+        width: 70%;
+    }
+
+    #contact .content{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}
+
+/* Mobile S 320 */
+
+@media (max-width:325px){
+    header{
+        padding: 0.3rem 1rem;
+        height: auto;
+        align-items: center;
+    } 
+   
+    header h1{
+        font-size: 1.2rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    nav{
+        width: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: right;
+    }
+
+    nav ul li a{
+        padding: 0px;
+        align-items: end;
+        word-spacing: 0.5rem;
+        font-size: 13px;
+    }
+
+    header nav ul li a:hover{
+        font-size: 1.1rem;
+        transition: font-size 0.3s ease;
+    } 
+
+    .content{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        .Name{
+            font-size: 1.5rem;
+        }
+    }
+
+    #home .content{
+        width: 70%;
+        h2{
+            font-size: 1rem;
+        }
+        .Name{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+
+
+    #home .content:hover{
+        width: 70%;
+        .Name{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
+    #skills .content{
+        width: 70%;
+    }
+
+    #projects .content{
+        width: 80%;
+        margin: 0px;
+        padding: 0;
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 11px;
+            text-align:center;
+        }
+        
+    }
+
+    #skills .content{
+        h2{
+            font-size: 1.3rem;
+        }
+        span{
+            font-size: 6px;
+        }
+        h3{
+            font-size: 12px;
+        }
+    }
+
+    #skills .content:hover{
+        h3{
+            font-size: 14px;
+        }
+         h2{
+            font-size: 1.7rem;
+         }
+    }
+
+    #contact .content{
+        h2{
+            font-size: 14px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+     
+}
+
+
